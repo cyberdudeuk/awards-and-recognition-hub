@@ -1,0 +1,32 @@
+name: links
+# Weekly check of every external link in the built page; broken links become one issue.
+on:
+  schedule: [{ cron: "41 5 * * 3" }]
+  workflow_dispatch:
+permissions: { contents: read, issues: write }
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with: { persist-credentials: false }
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with: { python-version: '3.12' }
+      - run: pip install -r requirements.txt && python build.py
+      - id: lychee
+        uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2
+        with:
+          args: --no-progress --max-concurrency 4 --accept 200,201,204,301,302,403,429 _site/index.html
+          output: links-report.md
+          fail: false
+      - if: steps.lychee.outputs.exit_code != 0
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
+        env: { REPORT: links-report.md, TITLE: "Broken links", LABEL: links }
+        with:
+          script: |
+            const fs=require("fs"); const body=fs.readFileSync(process.env.REPORT,"utf8"); const title=process.env.TITLE;
+            const {data:open}=await github.rest.issues.listForRepo({...context.repo, state:"open", labels:process.env.LABEL});
+            const hit=open.find(i=>i.title===title);
+            if(hit){ await github.rest.issues.createComment({...context.repo, issue_number:hit.number, body}); }
+            else { await github.rest.issues.create({...context.repo, title, body, labels:[process.env.LABEL]}); }

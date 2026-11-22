@@ -1,0 +1,37 @@
+name: build
+on:
+  push: { branches: [main] }
+  pull_request:
+  workflow_dispatch:
+permissions: { contents: read }
+concurrency: { group: "build-${{ github.ref }}", cancel-in-progress: true }
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with: { persist-credentials: false }
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with: { python-version: '3.12', cache: pip }
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with: { node-version: '22', cache: npm }
+      - run: pip install -r requirements.txt && python -m playwright install --with-deps chromium
+      - run: npm ci
+      - name: Repository policy scan (emails, banned terms, decks and films)
+        run: python tools/policy_scan.py --selftest && python tools/policy_scan.py
+      - name: GitHub config (YAML valid, actions pinned, issue forms exist)
+        run: python tools/validate_github.py
+      - name: Build (identifier scan runs when the secret is available)
+        env: { NAME_SCAN_LIST: "${{ secrets.NAME_SCAN_LIST }}" }
+        run: python build.py
+      - run: npm run lint
+      - run: python tests/unit_tools.py
+      - name: Self-checks, negatives and every page
+        env: { ALLOW_UNSCANNED: "${{ secrets.NAME_SCAN_LIST == '' && '1' || '0' }}" }
+        run: python tests/smoke.py 1280 light && python tests/smoke.py 390 dark
+      - run: python tests/widths.py
+      - run: python tests/a11y.py
+      - run: python tests/eval_search.py
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with: { name: site, path: _site, retention-days: 14 }

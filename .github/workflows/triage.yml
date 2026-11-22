@@ -1,0 +1,23 @@
+name: triage
+# Labels new issues for triage and warns the author (without repeating it) if the issue seems to contain contact details.
+on:
+  issues: { types: [opened] }
+  workflow_dispatch:
+permissions: { issues: write }
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
+        with:
+          script: |
+            const labels = [["triage","fbca04"],["bug","d73a4a"],["idea","a2eeef"],["content","0e8a16"],["date-change","5319e7"],["contact","c5def5"],
+              ["source-check","b60205"],["staleness","e99695"],["digest","1d76db"],["links","bfd4f2"],["uptime","b60205"]];
+            for (const [name,color] of labels) { try { await github.rest.issues.getLabel({...context.repo, name}); } catch { await github.rest.issues.createLabel({...context.repo, name, color}); } }
+            if (context.eventName !== "issues") return;
+            const n = context.payload.issue.number, text = (context.payload.issue.title||"") + "\n" + (context.payload.issue.body||"");
+            await github.rest.issues.addLabels({...context.repo, issue_number:n, labels:["triage"]});
+            if (/[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+\.[A-Za-z.]{2,}/.test(text) || /(\+44|\b0)\s?\d{2,4}[\s-]?\d{3,4}[\s-]?\d{3,4}/.test(text)) {
+              await github.rest.issues.createComment({...context.repo, issue_number:n, body:"This issue may contain an email address or phone number. Issues are public: please edit it to remove contact details. The service owner will reply here."});
+            }

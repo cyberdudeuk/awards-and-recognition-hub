@@ -1,0 +1,18 @@
+_site/
+node_modules
+__pycache__/
+*.pyc
+inspect/
+# Private inputs: never committed
+data.py
+sanitise.py
+name_scan_list*.txt
+*.xlsx
+*.zip
+# Decks and films stay out of the repository
+*.pptx
+*.mp4
+*deck*.html
+*-report.md
+digest.md
+calendar-pack/

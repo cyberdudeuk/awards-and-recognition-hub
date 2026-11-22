@@ -1,0 +1,36 @@
+name: pages
+# Publishes the tested build to the gh-pages branch. Refuses to publish unless the identifier scan ran (REQUIRE_SCAN=1).
+on:
+  push: { branches: [main] }
+  workflow_dispatch:
+permissions: { contents: write }
+concurrency: { group: pages, cancel-in-progress: false }
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with: { persist-credentials: false }
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with: { python-version: '3.12', cache: pip }
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with: { node-version: '22', cache: npm }
+      - run: pip install -r requirements.txt && python -m playwright install --with-deps chromium
+      - run: npm ci
+      - name: Build with the identifier scan required
+        env: { NAME_SCAN_LIST: "${{ secrets.NAME_SCAN_LIST }}", REQUIRE_SCAN: "1" }
+        run: python build.py
+      - run: python tests/smoke.py 1280 light
+      - name: Export calendars for subscription (the page's own ICS writer)
+        run: python tools/export_ics.py _site/calendar
+      - name: Push _site to gh-pages
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          cd _site
+          git init -q -b gh-pages
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Publish ${GITHUB_SHA::7}"
+          git push -q --force "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" gh-pages

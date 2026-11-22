@@ -1,0 +1,32 @@
+name: uptime
+# Hourly in UK working hours on weekdays: the live address answers, serves this project and keeps its CSP.
+on:
+  schedule: [{ cron: "7 8-18 * * 1-5" }]
+  workflow_dispatch:
+permissions: { contents: read, issues: write }
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - id: ping
+        continue-on-error: true
+        run: |
+          set -e
+          curl -fsS --max-time 30 https://cyberdudeuk.github.io/awards-and-recognition-hub/ -o page.html
+          grep -q '<title>Awards and Recognition Hub</title>' page.html
+          grep -q 'http-equiv="Content-Security-Policy"' page.html
+          curl -fsS --max-time 30 https://cyberdudeuk.github.io/awards-and-recognition-hub/calendar/Awards_and_Recognition_Hub_Master_Calendar.ics | head -c 15 | grep -q 'BEGIN:VCALENDAR'
+          echo "ok" > uptime.md
+      - if: steps.ping.outcome == 'failure'
+        run: echo "The live Hub did not answer, or answered without its title, Content Security Policy or master calendar, at $(date -u)." > uptime.md
+      - if: steps.ping.outcome == 'failure'
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
+        env: { REPORT: uptime.md, TITLE: "Live site check failed", LABEL: uptime }
+        with:
+          script: |
+            const fs=require("fs"); const body=fs.readFileSync(process.env.REPORT,"utf8"); const title=process.env.TITLE;
+            const {data:open}=await github.rest.issues.listForRepo({...context.repo, state:"open", labels:process.env.LABEL});
+            const hit=open.find(i=>i.title===title);
+            if(hit){ await github.rest.issues.createComment({...context.repo, issue_number:hit.number, body}); }
+            else { await github.rest.issues.create({...context.repo, title, body, labels:[process.env.LABEL]}); }

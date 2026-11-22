@@ -1,0 +1,29 @@
+name: sources
+# Weekly source check: opens or updates one issue when the check fails. A person re-reads the page and records the result.
+on:
+  schedule: [{ cron: "0 7 * * 1" }]
+  workflow_dispatch:
+permissions: { contents: read, issues: write }
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with: { persist-credentials: false }
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with: { python-version: '3.12' }
+      - id: run
+        run: python tools/check_sources.py
+        continue-on-error: true
+        env: { REPORT: source-report.md }
+      - if: steps.run.outcome == 'failure'
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
+        env: { REPORT: source-report.md, TITLE: "Source pages unreachable", LABEL: source-check }
+        with:
+          script: |
+            const fs=require("fs"); const body=fs.readFileSync(process.env.REPORT,"utf8"); const title=process.env.TITLE;
+            const {data:open}=await github.rest.issues.listForRepo({...context.repo, state:"open", labels:process.env.LABEL});
+            const hit=open.find(i=>i.title===title);
+            if(hit){ await github.rest.issues.createComment({...context.repo, issue_number:hit.number, body}); }
+            else { await github.rest.issues.create({...context.repo, title, body, labels:[process.env.LABEL]}); }

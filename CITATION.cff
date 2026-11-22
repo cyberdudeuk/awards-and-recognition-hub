@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use or refer to this work, please cite it as below."
+title: "Awards and Recognition Hub"
+abstract: "Verified award dates, fair ways to recognise people and teams, and tools to send recognition where people work. Formerly the Recognition Opportunities Portal. Not an official GOV.UK service."
+type: software
+authors:
+  - family-names: Silva
+    given-names: Emanuel
+    orcid: "https://orcid.org/0009-0000-5880-7219"
+version: "v2026.11.22.18"
+date-released: "2026-11-22"
+license: MIT
+repository-code: "https://github.com/cyberdudeuk/awards-and-recognition-hub"
+url: "https://cyberdudeuk.github.io/awards-and-recognition-hub/"
+keywords: [recognition, awards, civil service, public sector, nominations, calendar, accessibility]

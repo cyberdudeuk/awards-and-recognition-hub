@@ -1,0 +1,23 @@
+name: release
+# On a version tag: build, export the calendar pack with the page's own ICS writer, and attach both to a GitHub release.
+on:
+  push: { tags: ["v*"] }
+permissions: { contents: write }
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with: { persist-credentials: false }
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with: { python-version: '3.12', cache: pip }
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with: { node-version: '22', cache: npm }
+      - run: pip install -r requirements.txt && python -m playwright install --with-deps chromium
+      - run: npm ci
+      - env: { NAME_SCAN_LIST: "${{ secrets.NAME_SCAN_LIST }}", REQUIRE_SCAN: "1" }
+        run: python build.py
+      - run: python tools/export_ics.py calendar-pack && (cd calendar-pack && zip -q ../calendar-pack.zip *.ics) && (cd _site && zip -qr ../site.zip .)
+      - env: { GH_TOKEN: "${{ github.token }}" }
+        run: gh release create "$GITHUB_REF_NAME" calendar-pack.zip site.zip --title "$GITHUB_REF_NAME" --notes-file CHANGELOG.md

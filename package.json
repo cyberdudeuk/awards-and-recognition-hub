@@ -1,0 +1,15 @@
+{
+  "name": "awards-and-recognition-hub",
+  "version": "2026.11.22-18",
+  "private": true,
+  "description": "Build-time tools for the Awards and Recognition Hub (lint and accessibility scan). Nothing here ships to the page.",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint --max-warnings 0 tools/*.mjs eslint.config.mjs && node tools/lint_bundle.mjs _site/index.html"
+  },
+  "devDependencies": {
+    "axe-core": "4.10.3",
+    "eslint": "9.39.5",
+    "globals": "16.5.0"
+  }
+}

@@ -1,0 +1,27 @@
+name: Date change
+description: An award deadline, ceremony or opening date has changed or been published.
+title: "Date: "
+labels: ["date-change", "triage"]
+body:
+  - type: input
+    id: route
+    attributes: { label: "Award", description: "For example: Civil Service Awards" }
+    validations: { required: true }
+  - type: input
+    id: date
+    attributes: { label: "New date (and time if stated)" }
+    validations: { required: true }
+  - type: input
+    id: source
+    attributes: { label: "Organiser page (HTTPS link)" }
+    validations: { required: true }
+  - type: markdown
+    attributes:
+      value: A person checks the organiser page and approves a change record before any calendar changes. Calendar UIDs never change.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy
+      options:
+        - label: I have not included personal details. This issue is public.
+          required: true

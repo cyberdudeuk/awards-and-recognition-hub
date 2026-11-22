@@ -1,0 +1,26 @@
+name: digest
+# Every Monday: the next three weeks of deadlines as a comment on one pinned digest issue that people can watch.
+on:
+  schedule: [{ cron: "23 7 * * 1" }]
+  workflow_dispatch:
+permissions: { contents: read, issues: write }
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with: { persist-credentials: false }
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with: { python-version: '3.12' }
+      - run: python tools/digest.py
+        env: { REPORT: digest.md }
+      - uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
+        env: { REPORT: digest.md, TITLE: "Deadline digest (watch this issue)", LABEL: digest }
+        with:
+          script: |
+            const fs=require("fs"); const body=fs.readFileSync(process.env.REPORT,"utf8"); const title=process.env.TITLE;
+            const {data:open}=await github.rest.issues.listForRepo({...context.repo, state:"open", labels:process.env.LABEL});
+            const hit=open.find(i=>i.title===title);
+            if(hit){ await github.rest.issues.createComment({...context.repo, issue_number:hit.number, body}); }
+            else { await github.rest.issues.create({...context.repo, title, body, labels:[process.env.LABEL]}); }
