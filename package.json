@@ -8,7 +8,7 @@
     "lint": "eslint --max-warnings 0 tools/*.mjs eslint.config.mjs && node tools/lint_bundle.mjs _site/index.html"
   },
   "devDependencies": {
-    "axe-core": "4.10.3",
+    "axe-core": "4.14.1",
     "eslint": "9.39.5",
     "globals": "17.14.0"
   }
