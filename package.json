@@ -10,6 +10,6 @@
   "devDependencies": {
     "axe-core": "4.10.3",
     "eslint": "9.39.5",
-    "globals": "16.5.0"
+    "globals": "17.14.0"
   }
 }
