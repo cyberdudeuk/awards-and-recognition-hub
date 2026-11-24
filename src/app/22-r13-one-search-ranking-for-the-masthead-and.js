@@ -86,7 +86,7 @@ function buildDrawer(){
   let lastGrp=null;
   sec.tabs.forEach(([id,label,fn,cnt,flag,opt])=>{ const n=cnt?cnt():null; const on=id===cur.t; const grp=opt&&opt.group||null;
     if(grp!==lastGrp){ if(grp) h+=`<h2 class="dgrp">${esc(grp)}</h2>`; lastGrp=grp; }
-    h+=`<div class="dsec"><button data-tab="${id}" aria-current="${on}" title="${esc(label)}" aria-label="${esc(label)}${n!=null?", "+n:""}${flag?", "+flag:""}">${ico(TAB_ICON[id]||sec.id)}<span>${esc(label)}${flag?`<span class="flag">${flag}</span>`:""}</span>${n!=null?`<span class="count">${n}</span>`:""}</button>`;
+    h+=`<div class="dsec"><button data-tab="${id}" aria-current="${on}" title="${esc(label)}" >${ico(TAB_ICON[id]||sec.id)}<span>${esc(label)}${flag?`<span class="sr">, </span><span class="flag">${flag}</span>`:""}</span>${n!=null?`<span class="sr">, </span><span class="count">${n}</span>`:""}</button>`; /* D53: the name comes from the visible text, so voice users can say what they see */
     if (on){ const hs=$$("#panel h3[id]"); if (hs.length) h+=`<ul class="dsub">${hs.map(x=>`<li><a href="#${cur.s}-${cur.t}" data-jump="${x.id}">${esc(x.textContent)}</a></li>`).join("")}</ul>`; }
     h+=`</div>`; });
   h+=`<div class="dsec dfoot small muted">Flags: <span class="flag">new</span> added by this build · <span class="flag">changed</span> corrected or extended.</div>`;

@@ -14,12 +14,12 @@ jobs:
         with: { persist-credentials: false }
       - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
         with: { python-version: '3.12', cache: pip }
+      - name: Repository policy scan (emails, banned terms, duplicate JSON keys, decks and films), before any install
+        run: python tools/policy_scan.py --selftest && python tools/policy_scan.py
       - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with: { node-version: '22', cache: npm }
       - run: pip install -r requirements.txt && python -m playwright install --with-deps chromium
       - run: npm ci
-      - name: Repository policy scan (emails, banned terms, decks and films)
-        run: python tools/policy_scan.py --selftest && python tools/policy_scan.py
       - name: GitHub config (YAML valid, actions pinned, issue forms exist)
         run: python tools/validate_github.py
       - name: Build (identifier scan runs when the secret is available)

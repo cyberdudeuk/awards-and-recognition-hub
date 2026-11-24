@@ -12,7 +12,7 @@ Formerly the **Recognition Opportunities Portal**. Page addresses, saved setting
 
 | | |
 |---|---|
-| Release | v2026.11.22.18 (22 November 2026) |
+| Release | v2026.11.24.19 (24 November 2026) |
 | Sources verified | 22 November 2026. 16 of 17 organiser pages were confirmed. The Ethnicity Awards page could not be read because of a bot check |
 | Build profile | Public sector › personal public-good work › UK-wide › central-government audience |
 | Grade | **G4.** People rely on it to decide whether and how to nominate colleagues, so it carries a DPIA, a security review and accountability controls |

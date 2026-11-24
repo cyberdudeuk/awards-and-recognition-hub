@@ -2,6 +2,13 @@
 
 The full log, with notes for every release since v2026.10.17.1, lives in `data/portal-data.json` (`releases`). The Hub shows it under *Build hub › Release log*.
 
+## v2026.11.24.19 (24 November 2026)
+
+- **Fixed: every check and publish had stopped (D51).** Merged dependency updates left `axe-core` and `eslint` listed twice in `package.json`, so `npm ci` refused it. One version of each is kept and the lockfile regenerated. A new duplicate-key check runs before any install.
+- **Tools updated:** ESLint 10 (with `@eslint/js`, now a separate package), axe-core 4.14, Playwright 1.65 and newer pinned Actions.
+- **Dead code removed (D52):** found by ESLint 10's new unused-assignment rule.
+- No content or calendar changes. Sources were last verified on 22 November 2026.
+
 ## v2026.11.22.18 (22 November 2026)
 
 - **Renamed.** The Recognition Opportunities Portal is now the Awards and Recognition Hub. Identifiers are unchanged (ADR-11).

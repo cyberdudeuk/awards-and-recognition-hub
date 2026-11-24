@@ -21,14 +21,7 @@ function logoSVG(size, cls){ const s=size||64; const dots=[0,1,2,3,4,5,6,7].map(
 const SPLASH = {ms:2200, oncePerSession:true, skippable:true};
 function splashSeen(){ try{ return sessionStorage.getItem("rop:splash")==="1"; }catch(e){ return false; } }
 function splashMark(){ try{ sessionStorage.setItem("rop:splash","1"); }catch(e){} }
-let showSplash = function(force){ if(!force && (splashSeen() || navigator.webdriver)) return; splashMark();
-  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches || document.documentElement.classList.contains("acc-motion");
-  const el=document.createElement("div"); el.id="splash"; el.className="splash"+(reduce?" still":""); el.setAttribute("role","dialog"); el.setAttribute("aria-modal","true"); el.setAttribute("aria-labelledby","splashT");
-  el.innerHTML=`<div class="blobs" aria-hidden="true"><i></i><i></i><i></i><i></i></div><div class="splashcard glass">${logoSVG(96,"logo splogo")}<h2 id="splashT">Awards and Recognition Hub</h2><p>Find, plan and make fair recognition, with verified dates and safeguards.</p><button type="button" class="btn" id="splashGo">${ico("next","ico")}<span>Enter the Hub</span></button><p class="small muted">Opens automatically. Press any key to skip.</p></div>`;
-  document.body.appendChild(el); const go=$("#splashGo"); go.focus({preventScroll:true});
-  let done=false; const close=()=>{ if(done) return; done=true; el.classList.add("out"); setTimeout(()=>{ el.remove(); const h=$("#top"); h&&(h.tabIndex=-1, h.focus({preventScroll:true})); }, reduce?0:420); document.removeEventListener("keydown", key, true); };
-  const key=e=>{ e.preventDefault(); close(); }; document.addEventListener("keydown", key, true); go.addEventListener("click", close); el.addEventListener("click", e=>{ if(e.target===el) close(); });
-  setTimeout(close, reduce?900:SPLASH.ms); };
+let showSplash; /* The splash itself is defined in release 9 (15-r9-…js); the release 8 version was replaced before it could run and was removed (D52). */
 
 /* ---- Carousel slides: built from verified Hub content and live calendar data ---- */
 function carouselSlides(){ const nd=nextDeadlines(1)[0]; const n90=allOcc().filter(o=>o.date>=TODAY && dayDiff(TODAY,o.date)<=90); const nonFin=METHODS.filter(m=>m[2]!=="Financial").length; const rel=D.releases[D.releases.length-1];

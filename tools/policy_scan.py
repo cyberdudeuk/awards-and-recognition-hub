@@ -36,6 +36,21 @@ def check_text(name, text):
     return out
 
 
+def dup_keys(text):
+    """Return keys that appear twice in one JSON object (a bad merge can leave both versions of a dependency)."""
+    import json
+    dups = []
+    def hook(pairs):
+        seen = set()
+        for k, _ in pairs:
+            if k in seen: dups.append(k)
+            seen.add(k)
+        return dict(pairs)
+    try: json.loads(text, object_pairs_hook=hook)
+    except ValueError as e: return ["(invalid JSON: %s)" % e]
+    return dups
+
+
 def scan():
     bad = []
     for p in files():
@@ -45,6 +60,8 @@ def scan():
         try: t = open(p, encoding="utf8").read()
         except (UnicodeDecodeError, OSError): continue
         bad += check_text(rel, t)
+        if rel.endswith(".json") and not rel.startswith("_site"):
+            bad += ["%s: duplicate JSON key %s" % (rel, k) for k in dup_keys(t)]
     return bad
 
 
@@ -52,8 +69,9 @@ def selftest():
     cases = {"handler": '<input onfocus="x()">', "email": "write to someone" + "@" + "department.gov.uk", "ocdo": "the OCDO team", "dmt": "the Data Management Team said"}
     missed = [k for k, v in cases.items() if not check_text("x.html", v)]
     allowed = check_text("x.html", "fixture a@example.org and uid csa-2026@recognition-portfolio.gov.uk")
-    ok = not missed and not allowed and MEDIA.search("slides/deck.pptx")
-    print("policy scan selftest: %s" % ("all rules catch their break" if ok else "FAILED missed=%s allowed=%s" % (missed, allowed)))
+    dup = dup_keys('{"devDependencies": {"eslint": "9.39.5", "eslint": "10.15.0"}}') == ["eslint"]
+    ok = not missed and not allowed and MEDIA.search("slides/deck.pptx") and dup and dup_keys('{"a": 1}') == []
+    print("policy scan selftest: %s" % ("all rules catch their break" if ok else "FAILED missed=%s allowed=%s duplicate-key=%s" % (missed, allowed, dup)))
     return ok
 
 

@@ -54,7 +54,7 @@ const TEXT_SKIP = new Set(["calendar-timeline","calendar-month","knowledge-graph
 V.help_textonly = () => { TSEQ=0; const parts=[], toc=[];
   SECTIONS.forEach(s=>{ const tabs=s.tabs.filter(t=>!(t[5]&&t[5].hidden) && !(s.id==="workflows" && WF[t[0]]) && !TEXT_SKIP.has(s.id+"-"+t[0])); if(!tabs.length) return;
     toc.push(`<li><a href="#to-${s.id}">${esc(s.label)}</a></li>`);
-    parts.push(`<section aria-labelledby="to-${s.id}"><h2 id="to-${s.id}">${esc(s.label)}</h2><p>${esc(INTRO[s.id]?INTRO[s.id][1]:"")}</p>${tabs.map(t=>{ let h=""; try{ h=linearise(t[2]()); }catch(e){ h="<p>This part is interactive. Open it in the standard view.</p>"; } return `<h3>${esc(t[1])}</h3>${h}<p><a href="#${s.id}-${t[0]}">Open ${esc(t[1])} in the standard view</a></p>`; }).join("")}</section>`); });
+    parts.push(`<section aria-labelledby="to-${s.id}"><h2 id="to-${s.id}">${esc(s.label)}</h2><p>${esc(INTRO[s.id]?INTRO[s.id][1]:"")}</p>${tabs.map(t=>{ let h; try{ h=linearise(t[2]()); }catch(e){ h="<p>This part is interactive. Open it in the standard view.</p>"; } return `<h3>${esc(t[1])}</h3>${h}<p><a href="#${s.id}-${t[0]}">Open ${esc(t[1])} in the standard view</a></p>`; }).join("")}</section>`); });
   return `<div class="textonly-doc"><p>This is a text-only version of the whole Hub, in one page, for screen readers, text browsers and anyone who prefers plain text. Charts are described in words. Interactive tools (workflows, tours, idea box, exports) are listed with links to the standard view.</p>
   <nav aria-label="Text-only contents"><h2>Contents</h2><ol>${toc.join("")}<li><a href="#to-interactive">Interactive tools</a></li></ol></nav>
   ${parts.join("")}
