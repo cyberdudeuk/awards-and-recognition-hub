@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+PRODID:-//Awards and Recognition Hub//Release v2026.11.24.19//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:National Diversity Awards
+X-WR-TIMEZONE:Europe/London
+X-WR-CALDESC:Verified award deadlines and ceremonies plus clearly labelled 
+ preparation and monitoring reminders. Dates marked TBC or WATCH are not ve
+ rified award deadlines.
+BEGIN:VEVENT
+UID:nda-cycle-watch-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+RRULE:FREQ=MONTHLY;COUNT=6
+SUMMARY:[WATCH][NDA] Check for next National Diversity Awards cycle
+DESCRIPTION:Portfolio monitoring reminder. The verified 2026 cycle opened 1
+ 1 March\, closed 13 May\, shortlisted in July and announced winners 18 Sep
+ tember. No 2027 dates were verified.
+CATEGORIES:Recognition,Watch,National Diversity Awards,Date-TBC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://www.nationaldiversityawards.co.uk/
+COLOR:orange
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:[WATCH][NDA] Check for next National Diversity Awards cycle
+END:VALARM
+END:VEVENT
+END:VCALENDAR

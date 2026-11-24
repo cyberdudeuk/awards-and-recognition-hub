@@ -1,0 +1,59 @@
+BEGIN:VCALENDAR
+PRODID:-//Awards and Recognition Hub//Release v2026.11.24.19//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Ethnicity Awards
+X-WR-TIMEZONE:Europe/London
+X-WR-CALDESC:Verified award deadlines and ceremonies plus clearly labelled 
+ preparation and monitoring reminders. Dates marked TBC or WATCH are not ve
+ rified award deadlines.
+BEGIN:VEVENT
+UID:ethnicity-winners-2026@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:[MILESTONE][EA] Ethnicity Awards 2026 shortlist announced
+DESCRIPTION:Organiser date. On the organiser's nomination-process page each
+  date follows its own heading (1 May Nominations Open\; 1 June Nominations
+  Close\; 14 July Outstanding Employer\; 22 October Shortlist will be Annou
+ nced). Winners are announced at the Awards Ceremony in Autumn 2026\; no ce
+ remony date is published.
+CATEGORIES:Recognition,Milestone,Ethnicity Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://www.ethnicityawards.com/
+COLOR:teal
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[MILESTONE][EA] Ethnicity Awards 2026 shortlist announced
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:[MILESTONE][EA] Ethnicity Awards 2026 shortlist announced
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ethnicity-cycle-watch-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+RRULE:FREQ=MONTHLY;COUNT=6
+SUMMARY:[WATCH][EA] Check for next Ethnicity Awards nomination cycle
+DESCRIPTION:Portfolio monitoring reminder. No 2027 opening or closing date 
+ was verified. Check the official site and update this calendar when publis
+ hed.
+CATEGORIES:Recognition,Watch,Ethnicity Awards,Date-TBC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://www.ethnicityawards.com/
+COLOR:teal
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:[WATCH][EA] Check for next Ethnicity Awards nomination cycle
+END:VALARM
+END:VEVENT
+END:VCALENDAR

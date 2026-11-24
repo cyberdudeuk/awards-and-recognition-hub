@@ -1,0 +1,71 @@
+BEGIN:VCALENDAR
+PRODID:-//Awards and Recognition Hub//Release v2026.11.24.19//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:UK Honours
+X-WR-TIMEZONE:Europe/London
+X-WR-CALDESC:Verified award deadlines and ceremonies plus clearly labelled 
+ preparation and monitoring reminders. Dates marked TBC or WATCH are not ve
+ rified award deadlines.
+BEGIN:VEVENT
+UID:honours-quarterly-2026@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+RRULE:FREQ=MONTHLY;INTERVAL=3;COUNT=8
+SUMMARY:[ONGOING][HONOURS] Quarterly UK Honours candidate/evidence review
+DESCRIPTION:Suggested recurring portfolio review\, not an official Cabinet 
+ Office deadline. UK honours nominations can be made through the official n
+ omination process. Keep potential nominations strictly confidential: the n
+ ominee must not be told. Each nomination needs at least two support letter
+ s.
+CATEGORIES:Recognition,Ongoing,UK Honours,Confidential
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://honours.cabinetoffice.gov.uk/how-to-nominate/nomination-guidanc
+ e/
+COLOR:blue
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:[ONGOING][HONOURS] Quarterly UK Honours candidate/evidence revi
+ ew
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:[ONGOING][HONOURS] Quarterly UK Honours candidate/evidence revi
+ ew
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:kavs-deadline-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:[DEADLINE][HONOURS] King's Award for Voluntary Service 2027 nominat
+ ions close
+DESCRIPTION:Official date: nominations for KAVS 2027 close on 1 December 20
+ 26 (DCMS nomination page\, read 19 Oct 2026). For volunteer groups of thre
+ e or more\, running for at least three years\, led by volunteers. Staff ne
+ tworks are not automatically eligible\; check the eligibility page first.
+CATEGORIES:Recognition,Deadline,King's Award for Voluntary Service
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://kavs.dcms.gov.uk/make-a-nomination/
+COLOR:purple
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][HONOURS] King's Award for Voluntary Service 2027 nom
+ inations close
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][HONOURS] King's Award for Voluntary Service 2027 nom
+ inations close
+END:VALARM
+END:VEVENT
+END:VCALENDAR

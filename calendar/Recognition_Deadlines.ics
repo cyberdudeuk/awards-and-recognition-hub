@@ -1,0 +1,200 @@
+BEGIN:VCALENDAR
+PRODID:-//Awards and Recognition Hub//Release v2026.11.24.19//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Recognition - Deadlines
+X-WR-TIMEZONE:Europe/London
+X-WR-CALDESC:Verified award deadlines and ceremonies plus clearly labelled 
+ preparation and monitoring reminders. Dates marked TBC or WATCH are not ve
+ rified award deadlines.
+BEGIN:VEVENT
+UID:csa-deadline-2026@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+SUMMARY:[DEADLINE][CSA] Civil Service Awards 2026 nominations close
+DESCRIPTION:Verified deadline: 17:00 on 27 October 2026. Calendar event is 
+ all-day because .ics portability cannot guarantee a native category colour
+  or application-specific working-hours behaviour. Check the official site 
+ before submitting. Note (18 Oct 2026): the organiser's home page still giv
+ es this deadline\, but another line on the same page says the team will be
+  in contact once nominations open. Confirm with the organiser before relyi
+ ng on it.
+CATEGORIES:Recognition,Deadline,Civil Service Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://www.civilserviceawards.com/
+COLOR:crimson
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][CSA] Civil Service Awards 2026 nominations close
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][CSA] Civil Service Awards 2026 nominations close
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][CSA] Civil Service Awards 2026 nominations close
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bda-close-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:[DEADLINE][BDA] British Diversity Awards 2027 nominations close
+DESCRIPTION:Official key date. Organiser says deadlines may change\; verify
+  before submission.
+CATEGORIES:Recognition,Deadline,British Diversity Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://www.britishdiversityawards.com/keydates2026
+COLOR:purple
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][BDA] British Diversity Awards 2027 nominations close
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][BDA] British Diversity Awards 2027 nominations close
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][BDA] British Diversity Awards 2027 nominations close
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][BDA] British Diversity Awards 2027 nominations close
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:aig-deadline-2026@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:[DEADLINE][AIG] Analysis in Government Awards 2026 nominations clos
+ e (23:55)
+DESCRIPTION:Verified deadline: 23:55 on Friday 23 October 2026\, extended f
+ rom 23:55 on Friday 16 October. Only nominations made by the original dead
+ line enter the prize draw. Check the AiG Awards Hub before submitting.
+CATEGORIES:Recognition,Deadline,Analysis in Government Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://analysisfunction.civilservice.gov.uk/aig-awards-hub/
+COLOR:teal
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][AIG] Analysis in Government Awards 2026 nominations 
+ close (23:55)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][AIG] Analysis in Government Awards 2026 nominations 
+ close (23:55)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:iese-deadline-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:[DEADLINE][IESE] iESE Public Sector Transformation Awards 2027 nomi
+ nations close (5pm)
+DESCRIPTION:Organiser deadline: 5pm on Friday 15 January 2027. Open to UK p
+ ublic bodies\; categories include Digital Innovation\, AI in Public Servic
+ es and Cyber Resilience. Check the organiser's page before submitting.
+CATEGORIES:Recognition,Deadline,iESE Public Sector Transformation Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://iese.org.uk/awards/
+COLOR:darkcyan
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][IESE] iESE Public Sector Transformation Awards 2027 
+ nominations close (5pm)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][IESE] iESE Public Sector Transformation Awards 2027 
+ nominations close (5pm)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][IESE] iESE Public Sector Transformation Awards 2027 
+ nominations close (5pm)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:kavs-deadline-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:[DEADLINE][HONOURS] King's Award for Voluntary Service 2027 nominat
+ ions close
+DESCRIPTION:Official date: nominations for KAVS 2027 close on 1 December 20
+ 26 (DCMS nomination page\, read 19 Oct 2026). For volunteer groups of thre
+ e or more\, running for at least three years\, led by volunteers. Staff ne
+ tworks are not automatically eligible\; check the eligibility page first.
+CATEGORIES:Recognition,Deadline,King's Award for Voluntary Service
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://kavs.dcms.gov.uk/make-a-nomination/
+COLOR:purple
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][HONOURS] King's Award for Voluntary Service 2027 nom
+ inations close
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][HONOURS] King's Award for Voluntary Service 2027 nom
+ inations close
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:datac-deadline-2026@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:[DEADLINE][DATAC] Civil Service AI & Data Challenge 2026 to 2027 ap
+ plications close
+DESCRIPTION:Official date: applications for the 2026 to 2027 programme clos
+ e on Thursday 10 December 2026 (challenge site\, read 22 Nov 2026\; no clo
+ sing time is given\, so submit during the day). Open to anyone whatever th
+ eir role\, discipline\, seniority or employer\; every entrant needs line-m
+ anager approval. Workshops follow in February to March 2027.
+CATEGORIES:Recognition,Deadline,Civil Service AI & Data Challenge
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://datachallenge.uk/
+COLOR:slateblue
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][DATAC] Civil Service AI & Data Challenge 2026 to 202
+ 7 applications close
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][DATAC] Civil Service AI & Data Challenge 2026 to 202
+ 7 applications close
+END:VALARM
+END:VEVENT
+END:VCALENDAR

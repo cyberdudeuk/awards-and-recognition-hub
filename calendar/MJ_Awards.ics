@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+PRODID:-//Awards and Recognition Hub//Release v2026.11.24.19//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:MJ Awards (local government)
+X-WR-TIMEZONE:Europe/London
+X-WR-CALDESC:Verified award deadlines and ceremonies plus clearly labelled 
+ preparation and monitoring reminders. Dates marked TBC or WATCH are not ve
+ rified award deadlines.
+BEGIN:VEVENT
+UID:mj-ceremony-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20270625
+DTEND;VALUE=DATE:20270626
+SUMMARY:[CEREMONY][MJ] MJ Awards 2027 ceremony
+DESCRIPTION:Organiser date for the MJ Awards 2027 ceremony. The entry deadl
+ ine is not yet published\; watch the organiser's page.
+CATEGORIES:Recognition,Ceremony,MJ Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://awards.themj.co.uk/
+COLOR:darkgreen
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[CEREMONY][MJ] MJ Awards 2027 ceremony
+END:VALARM
+END:VEVENT
+END:VCALENDAR

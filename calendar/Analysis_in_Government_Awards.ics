@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+PRODID:-//Awards and Recognition Hub//Release v2026.11.24.19//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Analysis in Government Awards
+X-WR-TIMEZONE:Europe/London
+X-WR-CALDESC:Verified award deadlines and ceremonies plus clearly labelled 
+ preparation and monitoring reminders. Dates marked TBC or WATCH are not ve
+ rified award deadlines.
+BEGIN:VEVENT
+UID:aig-deadline-2026@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:[DEADLINE][AIG] Analysis in Government Awards 2026 nominations clos
+ e (23:55)
+DESCRIPTION:Verified deadline: 23:55 on Friday 23 October 2026\, extended f
+ rom 23:55 on Friday 16 October. Only nominations made by the original dead
+ line enter the prize draw. Check the AiG Awards Hub before submitting.
+CATEGORIES:Recognition,Deadline,Analysis in Government Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://analysisfunction.civilservice.gov.uk/aig-awards-hub/
+COLOR:teal
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][AIG] Analysis in Government Awards 2026 nominations 
+ close (23:55)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][AIG] Analysis in Government Awards 2026 nominations 
+ close (23:55)
+END:VALARM
+END:VEVENT
+END:VCALENDAR

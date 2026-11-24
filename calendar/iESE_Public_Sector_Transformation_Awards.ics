@@ -1,0 +1,65 @@
+BEGIN:VCALENDAR
+PRODID:-//Awards and Recognition Hub//Release v2026.11.24.19//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:iESE Public Sector Transformation Awards
+X-WR-TIMEZONE:Europe/London
+X-WR-CALDESC:Verified award deadlines and ceremonies plus clearly labelled 
+ preparation and monitoring reminders. Dates marked TBC or WATCH are not ve
+ rified award deadlines.
+BEGIN:VEVENT
+UID:iese-deadline-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:[DEADLINE][IESE] iESE Public Sector Transformation Awards 2027 nomi
+ nations close (5pm)
+DESCRIPTION:Organiser deadline: 5pm on Friday 15 January 2027. Open to UK p
+ ublic bodies\; categories include Digital Innovation\, AI in Public Servic
+ es and Cyber Resilience. Check the organiser's page before submitting.
+CATEGORIES:Recognition,Deadline,iESE Public Sector Transformation Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://iese.org.uk/awards/
+COLOR:darkcyan
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][IESE] iESE Public Sector Transformation Awards 2027 
+ nominations close (5pm)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][IESE] iESE Public Sector Transformation Awards 2027 
+ nominations close (5pm)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][IESE] iESE Public Sector Transformation Awards 2027 
+ nominations close (5pm)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:iese-ceremony-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20270303
+DTEND;VALUE=DATE:20270304
+SUMMARY:[CEREMONY][IESE] iESE Public Sector Transformation Awards 2027 cere
+ mony
+DESCRIPTION:Organiser date for the 2027 ceremony.
+CATEGORIES:Recognition,Ceremony,iESE Public Sector Transformation Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://iese.org.uk/awards/
+COLOR:darkcyan
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:[CEREMONY][IESE] iESE Public Sector Transformation Awards 2027 
+ ceremony
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,150 @@
+BEGIN:VCALENDAR
+PRODID:-//Awards and Recognition Hub//Release v2026.11.24.19//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Civil Service Awards
+X-WR-TIMEZONE:Europe/London
+X-WR-CALDESC:Verified award deadlines and ceremonies plus clearly labelled 
+ preparation and monitoring reminders. Dates marked TBC or WATCH are not ve
+ rified award deadlines.
+BEGIN:VEVENT
+UID:csa-deadline-2026@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+SUMMARY:[DEADLINE][CSA] Civil Service Awards 2026 nominations close
+DESCRIPTION:Verified deadline: 17:00 on 27 October 2026. Calendar event is 
+ all-day because .ics portability cannot guarantee a native category colour
+  or application-specific working-hours behaviour. Check the official site 
+ before submitting. Note (18 Oct 2026): the organiser's home page still giv
+ es this deadline\, but another line on the same page says the team will be
+  in contact once nominations open. Confirm with the organiser before relyi
+ ng on it.
+CATEGORIES:Recognition,Deadline,Civil Service Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://www.civilserviceawards.com/
+COLOR:crimson
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][CSA] Civil Service Awards 2026 nominations close
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][CSA] Civil Service Awards 2026 nominations close
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][CSA] Civil Service Awards 2026 nominations close
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:csa-prep-10-2026@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+SUMMARY:[PREP][CSA] 10-day final preparation
+DESCRIPTION:Suggested preparation checkpoint\, not an organiser-published d
+ ate. Verify category fit\, evidence\, facts\, approvals and the 600-word S
+ TAR nomination before the verified deadline.
+CATEGORIES:Recognition,Preparation,Civil Service Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://www.civilserviceawards.com/faqs/
+COLOR:crimson
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:[PREP][CSA] 10-day final preparation
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:csa-prep-5-2026@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:[PREP][CSA] 5-day evidence and STAR review
+DESCRIPTION:Suggested preparation checkpoint\, not an organiser-published d
+ ate. Verify category fit\, evidence\, facts\, approvals and the 600-word S
+ TAR nomination before the verified deadline.
+CATEGORIES:Recognition,Preparation,Civil Service Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://www.civilserviceawards.com/faqs/
+COLOR:crimson
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:[PREP][CSA] 5-day evidence and STAR review
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:csa-prep-2-2026@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261025
+DTEND;VALUE=DATE:20261026
+SUMMARY:[PREP][CSA] 48-hour submission check
+DESCRIPTION:Suggested preparation checkpoint\, not an organiser-published d
+ ate. Verify category fit\, evidence\, facts\, approvals and the 600-word S
+ TAR nomination before the verified deadline.
+CATEGORIES:Recognition,Preparation,Civil Service Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://www.civilserviceawards.com/faqs/
+COLOR:crimson
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:[PREP][CSA] 48-hour submission check
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:csa-shortlist-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:[MILESTONE][CSA] Civil Service Awards shortlist month begins
+DESCRIPTION:Official FAQ says the shortlist will be announced in January 20
+ 27\; no exact day was published in the retrieved source. This marker is a 
+ planning placeholder and may change.
+CATEGORIES:Recognition,Milestone,Civil Service Awards,Date-TBC
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+URL:https://www.civilserviceawards.com/faqs/
+COLOR:crimson
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:[MILESTONE][CSA] Civil Service Awards shortlist month begins
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:csa-ceremony-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:[CEREMONY][CSA] Civil Service Awards ceremony month begins
+DESCRIPTION:Official FAQ says the ceremony takes place in March 2027\; no e
+ xact day was published in the retrieved source. Invitation only for shortl
+ isted nominees. Planning placeholder\; verify exact date when announced.
+CATEGORIES:Recognition,Ceremony,Civil Service Awards,Date-TBC
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+URL:https://www.civilserviceawards.com/faqs/
+COLOR:crimson
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[CEREMONY][CSA] Civil Service Awards ceremony month begins
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:[CEREMONY][CSA] Civil Service Awards ceremony month begins
+END:VALARM
+END:VEVENT
+END:VCALENDAR

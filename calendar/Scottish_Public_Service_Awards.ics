@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+PRODID:-//Awards and Recognition Hub//Release v2026.11.24.19//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Scottish Public Service Awards
+X-WR-TIMEZONE:Europe/London
+X-WR-CALDESC:Verified award deadlines and ceremonies plus clearly labelled 
+ preparation and monitoring reminders. Dates marked TBC or WATCH are not ve
+ rified award deadlines.
+BEGIN:VEVENT
+UID:spsa-ceremony-2026@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261210
+SUMMARY:[CEREMONY][SPSA] Scottish Public Service Awards 2026 ceremony
+DESCRIPTION:Organiser date. Nominations have closed\; the shortlist is due 
+ in November 2026 (no exact day published).
+CATEGORIES:Recognition,Ceremony,Scottish Public Service Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://events.holyrood.com/event/scottish-public-service-awards-2026/
+COLOR:navy
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:[CEREMONY][SPSA] Scottish Public Service Awards 2026 ceremony
+END:VALARM
+END:VEVENT
+END:VCALENDAR

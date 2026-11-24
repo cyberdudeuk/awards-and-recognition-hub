@@ -1,0 +1,63 @@
+BEGIN:VCALENDAR
+PRODID:-//Awards and Recognition Hub//Release v2026.11.24.19//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Recognition - Ongoing Recognition
+X-WR-TIMEZONE:Europe/London
+X-WR-CALDESC:Verified award deadlines and ceremonies plus clearly labelled 
+ preparation and monitoring reminders. Dates marked TBC or WATCH are not ve
+ rified award deadlines.
+BEGIN:VEVENT
+UID:honours-quarterly-2026@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+RRULE:FREQ=MONTHLY;INTERVAL=3;COUNT=8
+SUMMARY:[ONGOING][HONOURS] Quarterly UK Honours candidate/evidence review
+DESCRIPTION:Suggested recurring portfolio review\, not an official Cabinet 
+ Office deadline. UK honours nominations can be made through the official n
+ omination process. Keep potential nominations strictly confidential: the n
+ ominee must not be told. Each nomination needs at least two support letter
+ s.
+CATEGORIES:Recognition,Ongoing,UK Honours,Confidential
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://honours.cabinetoffice.gov.uk/how-to-nominate/nomination-guidanc
+ e/
+COLOR:blue
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:[ONGOING][HONOURS] Quarterly UK Honours candidate/evidence revi
+ ew
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:[ONGOING][HONOURS] Quarterly UK Honours candidate/evidence revi
+ ew
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:internal-recognition-monthly@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+RRULE:FREQ=MONTHLY;COUNT=18
+SUMMARY:[ONGOING][INTERNAL] Monthly recognition portfolio review
+DESCRIPTION:Suggested recurring reminder. Review recent evidence for everyd
+ ay thanks\, local/team\, departmental\, network and other verified interna
+ l recognition routes. Confirm current departmental schemes before acting\;
+  this event does not assert a universal scheme or deadline.
+CATEGORIES:Recognition,Ongoing,Internal Recognition
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+COLOR:darkviolet
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:[ONGOING][INTERNAL] Monthly recognition portfolio review
+END:VALARM
+END:VEVENT
+END:VCALENDAR

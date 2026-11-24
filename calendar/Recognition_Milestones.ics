@@ -1,0 +1,100 @@
+BEGIN:VCALENDAR
+PRODID:-//Awards and Recognition Hub//Release v2026.11.24.19//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Recognition - Milestones
+X-WR-TIMEZONE:Europe/London
+X-WR-CALDESC:Verified award deadlines and ceremonies plus clearly labelled 
+ preparation and monitoring reminders. Dates marked TBC or WATCH are not ve
+ rified award deadlines.
+BEGIN:VEVENT
+UID:csa-shortlist-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:[MILESTONE][CSA] Civil Service Awards shortlist month begins
+DESCRIPTION:Official FAQ says the shortlist will be announced in January 20
+ 27\; no exact day was published in the retrieved source. This marker is a 
+ planning placeholder and may change.
+CATEGORIES:Recognition,Milestone,Civil Service Awards,Date-TBC
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+URL:https://www.civilserviceawards.com/faqs/
+COLOR:crimson
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:[MILESTONE][CSA] Civil Service Awards shortlist month begins
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bda-finalists-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20270114
+DTEND;VALUE=DATE:20270115
+SUMMARY:[MILESTONE][BDA] British Diversity Awards finalists announced
+DESCRIPTION:Official 2027 key date\; organiser warns deadlines may change.
+CATEGORIES:Recognition,Milestone,British Diversity Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://www.britishdiversityawards.com/keydates2026
+COLOR:purple
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:[MILESTONE][BDA] British Diversity Awards finalists announced
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:[MILESTONE][BDA] British Diversity Awards finalists announced
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ethnicity-winners-2026@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:[MILESTONE][EA] Ethnicity Awards 2026 shortlist announced
+DESCRIPTION:Organiser date. On the organiser's nomination-process page each
+  date follows its own heading (1 May Nominations Open\; 1 June Nominations
+  Close\; 14 July Outstanding Employer\; 22 October Shortlist will be Annou
+ nced). Winners are announced at the Awards Ceremony in Autumn 2026\; no ce
+ remony date is published.
+CATEGORIES:Recognition,Milestone,Ethnicity Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://www.ethnicityawards.com/
+COLOR:teal
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[MILESTONE][EA] Ethnicity Awards 2026 shortlist announced
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:[MILESTONE][EA] Ethnicity Awards 2026 shortlist announced
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:lgc-shortlist-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:[MILESTONE][LGC] LGC Awards 2027 shortlist announced
+DESCRIPTION:Organiser date for the LGC Awards 2027 shortlist. Entries close
+ d on 16 Oct 2026. Local government scheme.
+CATEGORIES:Recognition,Milestone,LGC Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://awards.lgcplus.com/lgca2027/
+COLOR:darkgreen
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:[MILESTONE][LGC] LGC Awards 2027 shortlist announced
+END:VALARM
+END:VEVENT
+END:VCALENDAR

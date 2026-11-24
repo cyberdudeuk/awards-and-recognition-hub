@@ -1,0 +1,48 @@
+# Awards and Recognition Hub
+
+> Verified award dates, fair ways to recognise people and teams, and tools to send recognition where people work. Formerly the Recognition Opportunities Portal. Not an official GOV.UK service; organisers own their dates and rules.
+
+Release v2026.11.24.19, sources verified 2026-11-22. Content OGL v3.0, code MIT. No AI model runs on the page; the Ask feature searches the page and can hand a prompt to your own assistant.
+
+## Data
+
+- [Portal data (JSON, the single source of truth)](https://cyberdudeuk.github.io/awards-and-recognition-hub/portal-data.json)
+- [Source code, issues and roadmap](https://github.com/cyberdudeuk/awards-and-recognition-hub)
+
+## Upcoming deadlines and ceremonies
+
+- 2026-12-01 deadline: King's Award for Voluntary Service 2027 nominations close (source: https://kavs.dcms.gov.uk/make-a-nomination/)
+- 2026-12-09 ceremony: Scottish Public Service Awards 2026 ceremony (source: https://events.holyrood.com/event/scottish-public-service-awards-2026/)
+- 2026-12-10 deadline: Civil Service AI & Data Challenge 2026 to 2027 applications close (source: https://datachallenge.uk/)
+- 2027-01-15 deadline: iESE Public Sector Transformation Awards 2027 nominations close (5pm) (source: https://iese.org.uk/awards/)
+- 2027-03-01 ceremony (tentative): Civil Service Awards ceremony month begins (source: https://www.civilserviceawards.com/faqs/)
+- 2027-03-03 ceremony: iESE Public Sector Transformation Awards 2027 ceremony (source: https://iese.org.uk/awards/)
+- 2027-03-17 ceremony: British Diversity Awards 2027 winners / ceremony (source: https://www.britishdiversityawards.com/)
+- 2027-03-24 ceremony: LGC Awards 2027 ceremony (source: https://awards.lgcplus.com/lgca2027/)
+- 2027-06-25 ceremony: MJ Awards 2027 ceremony (source: https://awards.themj.co.uk/)
+
+## Sources
+
+- CSA: Civil Service Awards (awards team) (https://www.civilserviceawards.com/, last checked 2026-11-22)
+- BDA: British Diversity Awards (https://www.britishdiversityawards.com/keydates2026, last checked 2026-11-22)
+- EA: Ethnicity Awards (https://www.ethnicityawards.com/nomination-process/, last checked 2026-10-17)
+- LGC: LGC (emap) (https://awards.lgcplus.com/lgca2027/, last checked 2026-11-22)
+- MJ: The MJ (https://awards.themj.co.uk/, last checked 2026-11-22)
+- SPSA: Holyrood Communications (https://events.holyrood.com/event/scottish-public-service-awards-2026/, last checked 2026-11-22)
+- IESE: iESE (https://iese.org.uk/awards/, last checked 2026-11-22)
+- HSJ: Health Service Journal (https://awards.hsj.co.uk/, last checked 2026-11-22)
+- DATAC: Cabinet Office, GDS, Global Government Forum, NTT DATA, ONS (https://datachallenge.uk/, last checked 2026-11-22)
+- CSAI: Cabinet Secretary (Civil Service blog) (https://civilservice.blog.gov.uk/2026/05/29/40890/, last checked 2026-11-22)
+- AIG: Government Analysis Function (https://analysisfunction.civilservice.gov.uk/aig-awards-hub/, last checked 2026-11-22)
+- NDA: National Diversity Awards (https://www.nationaldiversityawards.co.uk/, last checked 2026-11-22)
+- HONOURS: Cabinet Office Honours and Appointments (https://www.gov.uk/honours/nominate-someone-in-the-uk, last checked 2026-11-22)
+- KAVS: King's Award for Voluntary Service (DCMS) (https://kavs.dcms.gov.uk/make-a-nomination/, last checked 2026-11-22)
+- PAY: Cabinet Office (pay remit guidance) (https://www.gov.uk/government/publications/civil-service-pay-remit-guidance-2026-to-2027/civil-service-pay-remit-guidance-2026-to-2027, last checked 2026-11-22)
+- TAX: HMRC (trivial benefits) (https://www.gov.uk/expenses-and-benefits-trivial-benefits, last checked 2026-11-22)
+- DUK: Diversity UK (trustees) (https://www.diversityuk.org/awards/, last checked 2026-11-22)
+
+## Rules for agents
+
+- Always cite the organiser's page; dates marked TBC or WATCH are not deadlines.
+- Never submit a nomination on someone's behalf; the Hub drafts, people send.
+- Contact is by the repository's contact form only.

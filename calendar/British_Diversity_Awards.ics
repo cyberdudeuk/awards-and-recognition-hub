@@ -1,0 +1,164 @@
+BEGIN:VCALENDAR
+PRODID:-//Awards and Recognition Hub//Release v2026.11.24.19//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:British Diversity Awards
+X-WR-TIMEZONE:Europe/London
+X-WR-CALDESC:Verified award deadlines and ceremonies plus clearly labelled 
+ preparation and monitoring reminders. Dates marked TBC or WATCH are not ve
+ rified award deadlines.
+BEGIN:VEVENT
+UID:bda-prep-34-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+SUMMARY:[PREP][BDA] Start nomination preparation
+DESCRIPTION:Suggested preparation checkpoint\, not an organiser-published d
+ eadline. Check official criteria and current dates before submission.
+CATEGORIES:Recognition,Preparation,British Diversity Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://www.britishdiversityawards.com/keydates2026
+COLOR:purple
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:[PREP][BDA] Start nomination preparation
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bda-prep-21-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:[PREP][BDA] Evidence and category review
+DESCRIPTION:Suggested preparation checkpoint\, not an organiser-published d
+ eadline. Check official criteria and current dates before submission.
+CATEGORIES:Recognition,Preparation,British Diversity Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://www.britishdiversityawards.com/keydates2026
+COLOR:purple
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:[PREP][BDA] Evidence and category review
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bda-prep-7-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:[PREP][BDA] Final submission review
+DESCRIPTION:Suggested preparation checkpoint\, not an organiser-published d
+ eadline. Check official criteria and current dates before submission.
+CATEGORIES:Recognition,Preparation,British Diversity Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://www.britishdiversityawards.com/keydates2026
+COLOR:purple
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:[PREP][BDA] Final submission review
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bda-close-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:[DEADLINE][BDA] British Diversity Awards 2027 nominations close
+DESCRIPTION:Official key date. Organiser says deadlines may change\; verify
+  before submission.
+CATEGORIES:Recognition,Deadline,British Diversity Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://www.britishdiversityawards.com/keydates2026
+COLOR:purple
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][BDA] British Diversity Awards 2027 nominations close
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][BDA] British Diversity Awards 2027 nominations close
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][BDA] British Diversity Awards 2027 nominations close
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][BDA] British Diversity Awards 2027 nominations close
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bda-finalists-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20270114
+DTEND;VALUE=DATE:20270115
+SUMMARY:[MILESTONE][BDA] British Diversity Awards finalists announced
+DESCRIPTION:Official 2027 key date\; organiser warns deadlines may change.
+CATEGORIES:Recognition,Milestone,British Diversity Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://www.britishdiversityawards.com/keydates2026
+COLOR:purple
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:[MILESTONE][BDA] British Diversity Awards finalists announced
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:[MILESTONE][BDA] British Diversity Awards finalists announced
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bda-ceremony-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20270317
+DTEND;VALUE=DATE:20270318
+SUMMARY:[CEREMONY][BDA] British Diversity Awards 2027 winners / ceremony
+DESCRIPTION:Official site lists winners announced / event on 17 March 2027 
+ at JW Marriott Grosvenor House London. Verify before travel or attendance 
+ arrangements.
+CATEGORIES:Recognition,Ceremony,British Diversity Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://www.britishdiversityawards.com/
+COLOR:purple
+BEGIN:VALARM
+TRIGGER:-P30D
+ACTION:DISPLAY
+DESCRIPTION:[CEREMONY][BDA] British Diversity Awards 2027 winners / ceremon
+ y
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[CEREMONY][BDA] British Diversity Awards 2027 winners / ceremon
+ y
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:[CEREMONY][BDA] British Diversity Awards 2027 winners / ceremon
+ y
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:[CEREMONY][BDA] British Diversity Awards 2027 winners / ceremon
+ y
+END:VALARM
+END:VEVENT
+END:VCALENDAR

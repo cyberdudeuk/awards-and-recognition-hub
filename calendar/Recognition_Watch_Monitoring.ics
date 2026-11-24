@@ -1,0 +1,98 @@
+BEGIN:VCALENDAR
+PRODID:-//Awards and Recognition Hub//Release v2026.11.24.19//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Recognition - Watch Monitoring
+X-WR-TIMEZONE:Europe/London
+X-WR-CALDESC:Verified award deadlines and ceremonies plus clearly labelled 
+ preparation and monitoring reminders. Dates marked TBC or WATCH are not ve
+ rified award deadlines.
+BEGIN:VEVENT
+UID:ethnicity-cycle-watch-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+RRULE:FREQ=MONTHLY;COUNT=6
+SUMMARY:[WATCH][EA] Check for next Ethnicity Awards nomination cycle
+DESCRIPTION:Portfolio monitoring reminder. No 2027 opening or closing date 
+ was verified. Check the official site and update this calendar when publis
+ hed.
+CATEGORIES:Recognition,Watch,Ethnicity Awards,Date-TBC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://www.ethnicityawards.com/
+COLOR:teal
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:[WATCH][EA] Check for next Ethnicity Awards nomination cycle
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nda-cycle-watch-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+RRULE:FREQ=MONTHLY;COUNT=6
+SUMMARY:[WATCH][NDA] Check for next National Diversity Awards cycle
+DESCRIPTION:Portfolio monitoring reminder. The verified 2026 cycle opened 1
+ 1 March\, closed 13 May\, shortlisted in July and announced winners 18 Sep
+ tember. No 2027 dates were verified.
+CATEGORIES:Recognition,Watch,National Diversity Awards,Date-TBC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://www.nationaldiversityawards.co.uk/
+COLOR:orange
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:[WATCH][NDA] Check for next National Diversity Awards cycle
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:datac-cycle-watch-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:[WATCH][DATAC] Civil Service AI & Data Challenge 2026 to 2027: appl
+ ications open
+DESCRIPTION:Applications for the 2026 to 2027 Civil Service AI & Data Chall
+ enge opened on Monday 2 November 2026 (challenge site\, read 22 Nov 2026).
+  Applications close on Thursday 10 December 2026\; see the deadline entry.
+  Entrants need line-manager approval.
+CATEGORIES:Recognition,Watch,Civil Service AI & Data Challenge
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://datachallenge.uk/
+COLOR:slateblue
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:[WATCH][DATAC] Civil Service AI & Data Challenge 2026 to 2027: 
+ applications open
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:csai-window-watch-2026@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:[WATCH][CSAI] Cabinet Secretary's AI Innovation Award: watch for th
+ e next quarterly window
+DESCRIPTION:Not a deadline. The award is quarterly\; the first window close
+ d on 22 Jul 2026 and later windows were not published on 18 Oct 2026. Shor
+ tlisted nominees go into the Civil Service Awards.
+CATEGORIES:Recognition,Watch,Cabinet Secretary's AI Innovation Award
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://civilservice.blog.gov.uk/2026/05/29/40890/
+COLOR:slateblue
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:[WATCH][CSAI] Cabinet Secretary's AI Innovation Award: watch fo
+ r the next quarterly window
+END:VALARM
+END:VEVENT
+END:VCALENDAR

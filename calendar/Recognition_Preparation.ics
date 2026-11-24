@@ -1,0 +1,128 @@
+BEGIN:VCALENDAR
+PRODID:-//Awards and Recognition Hub//Release v2026.11.24.19//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Recognition - Preparation
+X-WR-TIMEZONE:Europe/London
+X-WR-CALDESC:Verified award deadlines and ceremonies plus clearly labelled 
+ preparation and monitoring reminders. Dates marked TBC or WATCH are not ve
+ rified award deadlines.
+BEGIN:VEVENT
+UID:csa-prep-10-2026@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+SUMMARY:[PREP][CSA] 10-day final preparation
+DESCRIPTION:Suggested preparation checkpoint\, not an organiser-published d
+ ate. Verify category fit\, evidence\, facts\, approvals and the 600-word S
+ TAR nomination before the verified deadline.
+CATEGORIES:Recognition,Preparation,Civil Service Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://www.civilserviceawards.com/faqs/
+COLOR:crimson
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:[PREP][CSA] 10-day final preparation
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:csa-prep-5-2026@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:[PREP][CSA] 5-day evidence and STAR review
+DESCRIPTION:Suggested preparation checkpoint\, not an organiser-published d
+ ate. Verify category fit\, evidence\, facts\, approvals and the 600-word S
+ TAR nomination before the verified deadline.
+CATEGORIES:Recognition,Preparation,Civil Service Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://www.civilserviceawards.com/faqs/
+COLOR:crimson
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:[PREP][CSA] 5-day evidence and STAR review
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:csa-prep-2-2026@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261025
+DTEND;VALUE=DATE:20261026
+SUMMARY:[PREP][CSA] 48-hour submission check
+DESCRIPTION:Suggested preparation checkpoint\, not an organiser-published d
+ ate. Verify category fit\, evidence\, facts\, approvals and the 600-word S
+ TAR nomination before the verified deadline.
+CATEGORIES:Recognition,Preparation,Civil Service Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://www.civilserviceawards.com/faqs/
+COLOR:crimson
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:[PREP][CSA] 48-hour submission check
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bda-prep-34-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+SUMMARY:[PREP][BDA] Start nomination preparation
+DESCRIPTION:Suggested preparation checkpoint\, not an organiser-published d
+ eadline. Check official criteria and current dates before submission.
+CATEGORIES:Recognition,Preparation,British Diversity Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://www.britishdiversityawards.com/keydates2026
+COLOR:purple
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:[PREP][BDA] Start nomination preparation
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bda-prep-21-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:[PREP][BDA] Evidence and category review
+DESCRIPTION:Suggested preparation checkpoint\, not an organiser-published d
+ eadline. Check official criteria and current dates before submission.
+CATEGORIES:Recognition,Preparation,British Diversity Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://www.britishdiversityawards.com/keydates2026
+COLOR:purple
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:[PREP][BDA] Evidence and category review
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bda-prep-7-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:[PREP][BDA] Final submission review
+DESCRIPTION:Suggested preparation checkpoint\, not an organiser-published d
+ eadline. Check official criteria and current dates before submission.
+CATEGORIES:Recognition,Preparation,British Diversity Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://www.britishdiversityawards.com/keydates2026
+COLOR:purple
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:[PREP][BDA] Final submission review
+END:VALARM
+END:VEVENT
+END:VCALENDAR

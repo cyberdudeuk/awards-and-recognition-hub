@@ -1,0 +1,64 @@
+BEGIN:VCALENDAR
+PRODID:-//Awards and Recognition Hub//Release v2026.11.24.19//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Civil Service AI & Data Challenge
+X-WR-TIMEZONE:Europe/London
+X-WR-CALDESC:Verified award deadlines and ceremonies plus clearly labelled 
+ preparation and monitoring reminders. Dates marked TBC or WATCH are not ve
+ rified award deadlines.
+BEGIN:VEVENT
+UID:datac-cycle-watch-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:[WATCH][DATAC] Civil Service AI & Data Challenge 2026 to 2027: appl
+ ications open
+DESCRIPTION:Applications for the 2026 to 2027 Civil Service AI & Data Chall
+ enge opened on Monday 2 November 2026 (challenge site\, read 22 Nov 2026).
+  Applications close on Thursday 10 December 2026\; see the deadline entry.
+  Entrants need line-manager approval.
+CATEGORIES:Recognition,Watch,Civil Service AI & Data Challenge
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://datachallenge.uk/
+COLOR:slateblue
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:[WATCH][DATAC] Civil Service AI & Data Challenge 2026 to 2027: 
+ applications open
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:datac-deadline-2026@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:[DEADLINE][DATAC] Civil Service AI & Data Challenge 2026 to 2027 ap
+ plications close
+DESCRIPTION:Official date: applications for the 2026 to 2027 programme clos
+ e on Thursday 10 December 2026 (challenge site\, read 22 Nov 2026\; no clo
+ sing time is given\, so submit during the day). Open to anyone whatever th
+ eir role\, discipline\, seniority or employer\; every entrant needs line-m
+ anager approval. Workshops follow in February to March 2027.
+CATEGORIES:Recognition,Deadline,Civil Service AI & Data Challenge
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://datachallenge.uk/
+COLOR:slateblue
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][DATAC] Civil Service AI & Data Challenge 2026 to 202
+ 7 applications close
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][DATAC] Civil Service AI & Data Challenge 2026 to 202
+ 7 applications close
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,704 @@
+BEGIN:VCALENDAR
+PRODID:-//Awards and Recognition Hub//Release v2026.11.24.19//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Awards and Recognition Hub
+X-WR-TIMEZONE:Europe/London
+X-WR-CALDESC:Verified award deadlines and ceremonies plus clearly labelled 
+ preparation and monitoring reminders. Dates marked TBC or WATCH are not ve
+ rified award deadlines.
+BEGIN:VEVENT
+UID:csa-deadline-2026@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+SUMMARY:[DEADLINE][CSA] Civil Service Awards 2026 nominations close
+DESCRIPTION:Verified deadline: 17:00 on 27 October 2026. Calendar event is 
+ all-day because .ics portability cannot guarantee a native category colour
+  or application-specific working-hours behaviour. Check the official site 
+ before submitting. Note (18 Oct 2026): the organiser's home page still giv
+ es this deadline\, but another line on the same page says the team will be
+  in contact once nominations open. Confirm with the organiser before relyi
+ ng on it.
+CATEGORIES:Recognition,Deadline,Civil Service Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://www.civilserviceawards.com/
+COLOR:crimson
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][CSA] Civil Service Awards 2026 nominations close
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][CSA] Civil Service Awards 2026 nominations close
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][CSA] Civil Service Awards 2026 nominations close
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:csa-prep-10-2026@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+SUMMARY:[PREP][CSA] 10-day final preparation
+DESCRIPTION:Suggested preparation checkpoint\, not an organiser-published d
+ ate. Verify category fit\, evidence\, facts\, approvals and the 600-word S
+ TAR nomination before the verified deadline.
+CATEGORIES:Recognition,Preparation,Civil Service Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://www.civilserviceawards.com/faqs/
+COLOR:crimson
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:[PREP][CSA] 10-day final preparation
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:csa-prep-5-2026@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:[PREP][CSA] 5-day evidence and STAR review
+DESCRIPTION:Suggested preparation checkpoint\, not an organiser-published d
+ ate. Verify category fit\, evidence\, facts\, approvals and the 600-word S
+ TAR nomination before the verified deadline.
+CATEGORIES:Recognition,Preparation,Civil Service Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://www.civilserviceawards.com/faqs/
+COLOR:crimson
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:[PREP][CSA] 5-day evidence and STAR review
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:csa-prep-2-2026@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261025
+DTEND;VALUE=DATE:20261026
+SUMMARY:[PREP][CSA] 48-hour submission check
+DESCRIPTION:Suggested preparation checkpoint\, not an organiser-published d
+ ate. Verify category fit\, evidence\, facts\, approvals and the 600-word S
+ TAR nomination before the verified deadline.
+CATEGORIES:Recognition,Preparation,Civil Service Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://www.civilserviceawards.com/faqs/
+COLOR:crimson
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:[PREP][CSA] 48-hour submission check
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:csa-shortlist-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:[MILESTONE][CSA] Civil Service Awards shortlist month begins
+DESCRIPTION:Official FAQ says the shortlist will be announced in January 20
+ 27\; no exact day was published in the retrieved source. This marker is a 
+ planning placeholder and may change.
+CATEGORIES:Recognition,Milestone,Civil Service Awards,Date-TBC
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+URL:https://www.civilserviceawards.com/faqs/
+COLOR:crimson
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:[MILESTONE][CSA] Civil Service Awards shortlist month begins
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:csa-ceremony-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:[CEREMONY][CSA] Civil Service Awards ceremony month begins
+DESCRIPTION:Official FAQ says the ceremony takes place in March 2027\; no e
+ xact day was published in the retrieved source. Invitation only for shortl
+ isted nominees. Planning placeholder\; verify exact date when announced.
+CATEGORIES:Recognition,Ceremony,Civil Service Awards,Date-TBC
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+URL:https://www.civilserviceawards.com/faqs/
+COLOR:crimson
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[CEREMONY][CSA] Civil Service Awards ceremony month begins
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:[CEREMONY][CSA] Civil Service Awards ceremony month begins
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bda-prep-34-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+SUMMARY:[PREP][BDA] Start nomination preparation
+DESCRIPTION:Suggested preparation checkpoint\, not an organiser-published d
+ eadline. Check official criteria and current dates before submission.
+CATEGORIES:Recognition,Preparation,British Diversity Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://www.britishdiversityawards.com/keydates2026
+COLOR:purple
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:[PREP][BDA] Start nomination preparation
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bda-prep-21-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:[PREP][BDA] Evidence and category review
+DESCRIPTION:Suggested preparation checkpoint\, not an organiser-published d
+ eadline. Check official criteria and current dates before submission.
+CATEGORIES:Recognition,Preparation,British Diversity Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://www.britishdiversityawards.com/keydates2026
+COLOR:purple
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:[PREP][BDA] Evidence and category review
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bda-prep-7-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:[PREP][BDA] Final submission review
+DESCRIPTION:Suggested preparation checkpoint\, not an organiser-published d
+ eadline. Check official criteria and current dates before submission.
+CATEGORIES:Recognition,Preparation,British Diversity Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://www.britishdiversityawards.com/keydates2026
+COLOR:purple
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:[PREP][BDA] Final submission review
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bda-close-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:[DEADLINE][BDA] British Diversity Awards 2027 nominations close
+DESCRIPTION:Official key date. Organiser says deadlines may change\; verify
+  before submission.
+CATEGORIES:Recognition,Deadline,British Diversity Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://www.britishdiversityawards.com/keydates2026
+COLOR:purple
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][BDA] British Diversity Awards 2027 nominations close
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][BDA] British Diversity Awards 2027 nominations close
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][BDA] British Diversity Awards 2027 nominations close
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][BDA] British Diversity Awards 2027 nominations close
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bda-finalists-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20270114
+DTEND;VALUE=DATE:20270115
+SUMMARY:[MILESTONE][BDA] British Diversity Awards finalists announced
+DESCRIPTION:Official 2027 key date\; organiser warns deadlines may change.
+CATEGORIES:Recognition,Milestone,British Diversity Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://www.britishdiversityawards.com/keydates2026
+COLOR:purple
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:[MILESTONE][BDA] British Diversity Awards finalists announced
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:[MILESTONE][BDA] British Diversity Awards finalists announced
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bda-ceremony-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20270317
+DTEND;VALUE=DATE:20270318
+SUMMARY:[CEREMONY][BDA] British Diversity Awards 2027 winners / ceremony
+DESCRIPTION:Official site lists winners announced / event on 17 March 2027 
+ at JW Marriott Grosvenor House London. Verify before travel or attendance 
+ arrangements.
+CATEGORIES:Recognition,Ceremony,British Diversity Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://www.britishdiversityawards.com/
+COLOR:purple
+BEGIN:VALARM
+TRIGGER:-P30D
+ACTION:DISPLAY
+DESCRIPTION:[CEREMONY][BDA] British Diversity Awards 2027 winners / ceremon
+ y
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[CEREMONY][BDA] British Diversity Awards 2027 winners / ceremon
+ y
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:[CEREMONY][BDA] British Diversity Awards 2027 winners / ceremon
+ y
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:[CEREMONY][BDA] British Diversity Awards 2027 winners / ceremon
+ y
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ethnicity-winners-2026@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:[MILESTONE][EA] Ethnicity Awards 2026 shortlist announced
+DESCRIPTION:Organiser date. On the organiser's nomination-process page each
+  date follows its own heading (1 May Nominations Open\; 1 June Nominations
+  Close\; 14 July Outstanding Employer\; 22 October Shortlist will be Annou
+ nced). Winners are announced at the Awards Ceremony in Autumn 2026\; no ce
+ remony date is published.
+CATEGORIES:Recognition,Milestone,Ethnicity Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://www.ethnicityawards.com/
+COLOR:teal
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[MILESTONE][EA] Ethnicity Awards 2026 shortlist announced
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:[MILESTONE][EA] Ethnicity Awards 2026 shortlist announced
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ethnicity-cycle-watch-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+RRULE:FREQ=MONTHLY;COUNT=6
+SUMMARY:[WATCH][EA] Check for next Ethnicity Awards nomination cycle
+DESCRIPTION:Portfolio monitoring reminder. No 2027 opening or closing date 
+ was verified. Check the official site and update this calendar when publis
+ hed.
+CATEGORIES:Recognition,Watch,Ethnicity Awards,Date-TBC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://www.ethnicityawards.com/
+COLOR:teal
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:[WATCH][EA] Check for next Ethnicity Awards nomination cycle
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nda-cycle-watch-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+RRULE:FREQ=MONTHLY;COUNT=6
+SUMMARY:[WATCH][NDA] Check for next National Diversity Awards cycle
+DESCRIPTION:Portfolio monitoring reminder. The verified 2026 cycle opened 1
+ 1 March\, closed 13 May\, shortlisted in July and announced winners 18 Sep
+ tember. No 2027 dates were verified.
+CATEGORIES:Recognition,Watch,National Diversity Awards,Date-TBC
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://www.nationaldiversityawards.co.uk/
+COLOR:orange
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:[WATCH][NDA] Check for next National Diversity Awards cycle
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:honours-quarterly-2026@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+RRULE:FREQ=MONTHLY;INTERVAL=3;COUNT=8
+SUMMARY:[ONGOING][HONOURS] Quarterly UK Honours candidate/evidence review
+DESCRIPTION:Suggested recurring portfolio review\, not an official Cabinet 
+ Office deadline. UK honours nominations can be made through the official n
+ omination process. Keep potential nominations strictly confidential: the n
+ ominee must not be told. Each nomination needs at least two support letter
+ s.
+CATEGORIES:Recognition,Ongoing,UK Honours,Confidential
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://honours.cabinetoffice.gov.uk/how-to-nominate/nomination-guidanc
+ e/
+COLOR:blue
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:[ONGOING][HONOURS] Quarterly UK Honours candidate/evidence revi
+ ew
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:[ONGOING][HONOURS] Quarterly UK Honours candidate/evidence revi
+ ew
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:internal-recognition-monthly@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+RRULE:FREQ=MONTHLY;COUNT=18
+SUMMARY:[ONGOING][INTERNAL] Monthly recognition portfolio review
+DESCRIPTION:Suggested recurring reminder. Review recent evidence for everyd
+ ay thanks\, local/team\, departmental\, network and other verified interna
+ l recognition routes. Confirm current departmental schemes before acting\;
+  this event does not assert a universal scheme or deadline.
+CATEGORIES:Recognition,Ongoing,Internal Recognition
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+COLOR:darkviolet
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:[ONGOING][INTERNAL] Monthly recognition portfolio review
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:aig-deadline-2026@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:[DEADLINE][AIG] Analysis in Government Awards 2026 nominations clos
+ e (23:55)
+DESCRIPTION:Verified deadline: 23:55 on Friday 23 October 2026\, extended f
+ rom 23:55 on Friday 16 October. Only nominations made by the original dead
+ line enter the prize draw. Check the AiG Awards Hub before submitting.
+CATEGORIES:Recognition,Deadline,Analysis in Government Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://analysisfunction.civilservice.gov.uk/aig-awards-hub/
+COLOR:teal
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][AIG] Analysis in Government Awards 2026 nominations 
+ close (23:55)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][AIG] Analysis in Government Awards 2026 nominations 
+ close (23:55)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:lgc-shortlist-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:[MILESTONE][LGC] LGC Awards 2027 shortlist announced
+DESCRIPTION:Organiser date for the LGC Awards 2027 shortlist. Entries close
+ d on 16 Oct 2026. Local government scheme.
+CATEGORIES:Recognition,Milestone,LGC Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://awards.lgcplus.com/lgca2027/
+COLOR:darkgreen
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:[MILESTONE][LGC] LGC Awards 2027 shortlist announced
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:lgc-ceremony-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20270324
+DTEND;VALUE=DATE:20270325
+SUMMARY:[CEREMONY][LGC] LGC Awards 2027 ceremony
+DESCRIPTION:Organiser date for the LGC Awards 2027 ceremony.
+CATEGORIES:Recognition,Ceremony,LGC Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://awards.lgcplus.com/lgca2027/
+COLOR:darkgreen
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:[CEREMONY][LGC] LGC Awards 2027 ceremony
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:mj-ceremony-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20270625
+DTEND;VALUE=DATE:20270626
+SUMMARY:[CEREMONY][MJ] MJ Awards 2027 ceremony
+DESCRIPTION:Organiser date for the MJ Awards 2027 ceremony. The entry deadl
+ ine is not yet published\; watch the organiser's page.
+CATEGORIES:Recognition,Ceremony,MJ Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://awards.themj.co.uk/
+COLOR:darkgreen
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[CEREMONY][MJ] MJ Awards 2027 ceremony
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:spsa-ceremony-2026@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261210
+SUMMARY:[CEREMONY][SPSA] Scottish Public Service Awards 2026 ceremony
+DESCRIPTION:Organiser date. Nominations have closed\; the shortlist is due 
+ in November 2026 (no exact day published).
+CATEGORIES:Recognition,Ceremony,Scottish Public Service Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://events.holyrood.com/event/scottish-public-service-awards-2026/
+COLOR:navy
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:[CEREMONY][SPSA] Scottish Public Service Awards 2026 ceremony
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:iese-deadline-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:[DEADLINE][IESE] iESE Public Sector Transformation Awards 2027 nomi
+ nations close (5pm)
+DESCRIPTION:Organiser deadline: 5pm on Friday 15 January 2027. Open to UK p
+ ublic bodies\; categories include Digital Innovation\, AI in Public Servic
+ es and Cyber Resilience. Check the organiser's page before submitting.
+CATEGORIES:Recognition,Deadline,iESE Public Sector Transformation Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://iese.org.uk/awards/
+COLOR:darkcyan
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][IESE] iESE Public Sector Transformation Awards 2027 
+ nominations close (5pm)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][IESE] iESE Public Sector Transformation Awards 2027 
+ nominations close (5pm)
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][IESE] iESE Public Sector Transformation Awards 2027 
+ nominations close (5pm)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:iese-ceremony-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20270303
+DTEND;VALUE=DATE:20270304
+SUMMARY:[CEREMONY][IESE] iESE Public Sector Transformation Awards 2027 cere
+ mony
+DESCRIPTION:Organiser date for the 2027 ceremony.
+CATEGORIES:Recognition,Ceremony,iESE Public Sector Transformation Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://iese.org.uk/awards/
+COLOR:darkcyan
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:[CEREMONY][IESE] iESE Public Sector Transformation Awards 2027 
+ ceremony
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hsj-ceremony-2026@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:[CEREMONY][HSJ] HSJ Awards 2026 ceremony
+DESCRIPTION:Organiser date. Entries have closed\; shortlists were published
+  in August 2026. Health and NHS scheme.
+CATEGORIES:Recognition,Ceremony,HSJ Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://awards.hsj.co.uk/
+COLOR:firebrick
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:[CEREMONY][HSJ] HSJ Awards 2026 ceremony
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:datac-cycle-watch-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:[WATCH][DATAC] Civil Service AI & Data Challenge 2026 to 2027: appl
+ ications open
+DESCRIPTION:Applications for the 2026 to 2027 Civil Service AI & Data Chall
+ enge opened on Monday 2 November 2026 (challenge site\, read 22 Nov 2026).
+  Applications close on Thursday 10 December 2026\; see the deadline entry.
+  Entrants need line-manager approval.
+CATEGORIES:Recognition,Watch,Civil Service AI & Data Challenge
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://datachallenge.uk/
+COLOR:slateblue
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:[WATCH][DATAC] Civil Service AI & Data Challenge 2026 to 2027: 
+ applications open
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:csai-window-watch-2026@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:[WATCH][CSAI] Cabinet Secretary's AI Innovation Award: watch for th
+ e next quarterly window
+DESCRIPTION:Not a deadline. The award is quarterly\; the first window close
+ d on 22 Jul 2026 and later windows were not published on 18 Oct 2026. Shor
+ tlisted nominees go into the Civil Service Awards.
+CATEGORIES:Recognition,Watch,Cabinet Secretary's AI Innovation Award
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://civilservice.blog.gov.uk/2026/05/29/40890/
+COLOR:slateblue
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:[WATCH][CSAI] Cabinet Secretary's AI Innovation Award: watch fo
+ r the next quarterly window
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:kavs-deadline-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:[DEADLINE][HONOURS] King's Award for Voluntary Service 2027 nominat
+ ions close
+DESCRIPTION:Official date: nominations for KAVS 2027 close on 1 December 20
+ 26 (DCMS nomination page\, read 19 Oct 2026). For volunteer groups of thre
+ e or more\, running for at least three years\, led by volunteers. Staff ne
+ tworks are not automatically eligible\; check the eligibility page first.
+CATEGORIES:Recognition,Deadline,King's Award for Voluntary Service
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://kavs.dcms.gov.uk/make-a-nomination/
+COLOR:purple
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][HONOURS] King's Award for Voluntary Service 2027 nom
+ inations close
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][HONOURS] King's Award for Voluntary Service 2027 nom
+ inations close
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:datac-deadline-2026@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:[DEADLINE][DATAC] Civil Service AI & Data Challenge 2026 to 2027 ap
+ plications close
+DESCRIPTION:Official date: applications for the 2026 to 2027 programme clos
+ e on Thursday 10 December 2026 (challenge site\, read 22 Nov 2026\; no clo
+ sing time is given\, so submit during the day). Open to anyone whatever th
+ eir role\, discipline\, seniority or employer\; every entrant needs line-m
+ anager approval. Workshops follow in February to March 2027.
+CATEGORIES:Recognition,Deadline,Civil Service AI & Data Challenge
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://datachallenge.uk/
+COLOR:slateblue
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][DATAC] Civil Service AI & Data Challenge 2026 to 202
+ 7 applications close
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[DEADLINE][DATAC] Civil Service AI & Data Challenge 2026 to 202
+ 7 applications close
+END:VALARM
+END:VEVENT
+END:VCALENDAR

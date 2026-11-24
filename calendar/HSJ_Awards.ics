@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+PRODID:-//Awards and Recognition Hub//Release v2026.11.24.19//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:HSJ Awards (health)
+X-WR-TIMEZONE:Europe/London
+X-WR-CALDESC:Verified award deadlines and ceremonies plus clearly labelled 
+ preparation and monitoring reminders. Dates marked TBC or WATCH are not ve
+ rified award deadlines.
+BEGIN:VEVENT
+UID:hsj-ceremony-2026@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:[CEREMONY][HSJ] HSJ Awards 2026 ceremony
+DESCRIPTION:Organiser date. Entries have closed\; shortlists were published
+  in August 2026. Health and NHS scheme.
+CATEGORIES:Recognition,Ceremony,HSJ Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://awards.hsj.co.uk/
+COLOR:firebrick
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:[CEREMONY][HSJ] HSJ Awards 2026 ceremony
+END:VALARM
+END:VEVENT
+END:VCALENDAR

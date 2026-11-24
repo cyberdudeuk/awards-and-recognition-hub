@@ -1,0 +1,48 @@
+BEGIN:VCALENDAR
+PRODID:-//Awards and Recognition Hub//Release v2026.11.24.19//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:LGC Awards (local government)
+X-WR-TIMEZONE:Europe/London
+X-WR-CALDESC:Verified award deadlines and ceremonies plus clearly labelled 
+ preparation and monitoring reminders. Dates marked TBC or WATCH are not ve
+ rified award deadlines.
+BEGIN:VEVENT
+UID:lgc-shortlist-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:[MILESTONE][LGC] LGC Awards 2027 shortlist announced
+DESCRIPTION:Organiser date for the LGC Awards 2027 shortlist. Entries close
+ d on 16 Oct 2026. Local government scheme.
+CATEGORIES:Recognition,Milestone,LGC Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://awards.lgcplus.com/lgca2027/
+COLOR:darkgreen
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:[MILESTONE][LGC] LGC Awards 2027 shortlist announced
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:lgc-ceremony-2027@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20270324
+DTEND;VALUE=DATE:20270325
+SUMMARY:[CEREMONY][LGC] LGC Awards 2027 ceremony
+DESCRIPTION:Organiser date for the LGC Awards 2027 ceremony.
+CATEGORIES:Recognition,Ceremony,LGC Awards
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+URL:https://awards.lgcplus.com/lgca2027/
+COLOR:darkgreen
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:[CEREMONY][LGC] LGC Awards 2027 ceremony
+END:VALARM
+END:VEVENT
+END:VCALENDAR

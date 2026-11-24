@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+PRODID:-//Awards and Recognition Hub//Release v2026.11.24.19//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Internal Departmental Recognition
+X-WR-TIMEZONE:Europe/London
+X-WR-CALDESC:Verified award deadlines and ceremonies plus clearly labelled 
+ preparation and monitoring reminders. Dates marked TBC or WATCH are not ve
+ rified award deadlines.
+BEGIN:VEVENT
+UID:internal-recognition-monthly@recognition-portfolio.gov.uk
+DTSTAMP:20261124T120000Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+RRULE:FREQ=MONTHLY;COUNT=18
+SUMMARY:[ONGOING][INTERNAL] Monthly recognition portfolio review
+DESCRIPTION:Suggested recurring reminder. Review recent evidence for everyd
+ ay thanks\, local/team\, departmental\, network and other verified interna
+ l recognition routes. Confirm current departmental schemes before acting\;
+  this event does not assert a universal scheme or deadline.
+CATEGORIES:Recognition,Ongoing,Internal Recognition
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+COLOR:darkviolet
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:[ONGOING][INTERNAL] Monthly recognition portfolio review
+END:VALARM
+END:VEVENT
+END:VCALENDAR
